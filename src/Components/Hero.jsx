@@ -1,0 +1,69 @@
+ 
+import { useEffect, useState } from "react";
+import Header from "./Header";
+
+const Hero = () => {
+ const fullName = "Hadifa Rousheen"; 
+  const [text, setText] = useState("");
+
+  useEffect(() => {
+    
+     let i = 0;
+
+  const type = () => {
+    setText((prev) =>{
+      console.log(prev);
+      return  prev + fullName.charAt(i++);
+    }
+    );
+    // i++;
+    
+
+    
+    if (i < fullName.length) {
+      setTimeout(type, 150);
+    }
+  };
+
+  
+    
+  if (window.particlesJS) {
+      window.particlesJS.load("particles-js", "/particles.json", function () {
+        console.log("particles.js config loaded");
+        type(); 
+      });
+    }
+  
+      
+  }, []);
+
+  return (
+    <div className="relative w-full h-screen ">
+      {/* This is where particles.js will render */}
+      <div id="particles-js" className="absolute top-0 left-0 w-full h-full -z-10" />
+    <Header/>
+      <div className="w-1/2 mx-auto h-full flex flex-col items-center justify-center p-4 mt-[-2%]">
+        <div className="text-4xl text-center p-4 rounded-lg shadow-lg">
+          <h1 className="p-4 font-extrabold">Hello, I'm</h1>
+          <h1 className="p-4 font-extrabold text-purple-700">{text}</h1>
+          <h1 className="p-4 font-extrabold">I'm a Frontend Developer</h1>
+          <p className="text-xl my-3">
+I’m a frontend developer who builds clean, responsive, and user-friendly websites. I specialize in HTML, CSS, and JavaScript, and love working with React to bring designs to life. Passionate about creating smooth experiences and learning new tech every day.          </p>
+          <div className="flex justify-center mt-4">
+            <button className="text-xl border border-purple-900 bg-purple-600 text-white mx-2 px-2 py-1 rounded hover:bg-purple-700 transition hover:border hover:border-white">
+              Contact Me
+            </button>
+            <button className="text-xl border border-purple-900 bg-purple-600 shadow-xl/30 shadow-purple-800 text-white mx-2 px-2 py-1 rounded hover:bg-purple-700 transition hover:border-white">
+              Resume
+            </button>
+            
+          </div>
+          <img className="border border-gray-900 bg-white size-10 animate-bounce m-auto rounded-full mt-8 p-3 h-13 w-13 " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2ElEQVR4nO2Q3QpBURCF940bPzNR/pLiceTJvATPIGYOl1y7k4gojifwM+OOdjklnA7OudL5atVuT3utPcuYD3EylyaD7gnUpcylYaKGQF1GvVoR6C7yAL6be4oDXuC4oiA4rigIjiv674om5pp4DrB3oUwZhQlkw6AtAuk8BzBI+z7bEAp9HUCg4xdTP4GOvt8gfcgzyDTInFAW/eSpZH5hmDoWCGXmHyBLJ3kqmzB0U8cioczf/HzVy50rocw9BlmpMsr6ofOtg1qLxNxjiFq3dVnZ86cPb4tHXIrFhHgSAAAAAElFTkSuQmCC" alt="long-arrow-down"></img>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
+{/* <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2ElEQVR4nO2Q3QpBURCF940bPzNR/pLiceTJvATPIGYOl1y7k4gojifwM+OOdjklnA7OudL5atVuT3utPcuYD3EylyaD7gnUpcylYaKGQF1GvVoR6C7yAL6be4oDXuC4oiA4rigIjiv674om5pp4DrB3oUwZhQlkw6AtAuk8BzBI+z7bEAp9HUCg4xdTP4GOvt8gfcgzyDTInFAW/eSpZH5hmDoWCGXmHyBLJ3kqmzB0U8cioczf/HzVy50rocw9BlmpMsr6ofOtg1qLxNxjiFq3dVnZ86cPb4tHXIrFhHgSAAAAAElFTkSuQmCC" alt="long-arrow-down"></img> */}
