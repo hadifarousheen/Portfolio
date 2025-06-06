@@ -8,7 +8,7 @@ const Footer = () => {
           </p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end ">
-          <a>
+          <a href="https://www.linkedin.com/in/hadifarouhseen/" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -21,7 +21,7 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a>
+          <a href="https://github.com/hadifarousheen" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"

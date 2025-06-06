@@ -6,15 +6,27 @@ const Projects = () => {
       </h1>
       <div className=" w-3/4 m-auto flex my-4 rounded-lg shadow-xl/30 shadow-white">
         <div className="rounded-lg shadow-xl/30 shadow-white">
-          <iframe
+          {/* <iframe
             className="rounded-lg h-full"
             width="560"
-            src="https://www.youtube.com/embed/MPRUQB5KEd4?si=6Xbn579X_494kRmY&loop=1&autoplay=1"
+            src="https://www.youtube.com/embed/MPRUQB5KEd4?si=6Xbn579X_494kRmY&autoplay=1"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowFullScreen
-          ></iframe>
+          ></iframe> */}
+         <iframe
+  className="rounded-lg h-full"
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/MPRUQB5KEd4?autoplay=1&loop=1&mute=1&playlist=MPRUQB5KEd4"
+  title="YouTube video player"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
+></iframe>
+
+
         </div>
         <div className="p-6 shadow-xl/30 shadow-white hover:scale-105 rounded-lg">
           <h1 className="text-3xl text-purple-700 font-bold">CookGPT</h1>
@@ -25,25 +37,28 @@ const Projects = () => {
             Integrated Google Firebase for user authentication and Groq API for
             natural language search functionality
           </p>
-          <button className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 w-1/2 shadow-md shadow-purple-600">
+          <a href="https://github.com/hadifarousheen/CookGPT" target="_blank" className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 inline-block mt-2  w-1/2 shadow-sm shadow-purple-600 text-center">
             Code
-          </button>
-          <button className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 w-1/2 shadow-md shadow-purple-600">
+          </a>
+          <a href="https://hadifarousheen.github.io/CookGPT/" target="_blank" className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 inline-block  w-1/2 shadow-sm shadow-purple-600 text-center">
             Live
-          </button>
+          </a>
         </div>
       </div>
       <div className=" w-3/4 m-auto flex my-4  rounded-lg shadow-xl/30 shadow-white">
         <div className="rounded-lg shadow-xl/30 shadow-white">
+     
           <iframe
-            className="rounded-lg h-full"
-            width="560"
-            src="https://www.youtube.com/embed/x2XirnlZF4o?si=bsiWY4srUBa3tQZT&loop=1&autoplay=1"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+  className="rounded-lg h-full"
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/x2XirnlZF4o?autoplay=1&loop=1&mute=1&playlist=x2XirnlZF4o"
+  title="YouTube video player"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
+></iframe>
+
         </div>
         <div className="p-6 shadow-xl/30 shadow-white hover:scale-105 rounded-lg">
           <h1 className="text-3xl text-purple-700 font-bold">Pokemon API</h1>
@@ -53,25 +68,28 @@ const Projects = () => {
             sort, filter by type, random Pok´ emon generator, add to favorites,
             and comparison between Pok´emon.
           </p>
-          <button className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 w-1/2 shadow-md shadow-purple-600">
+          <a href="https://github.com/hadifarousheen/Pokemon-API" target="_blank" className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 inline-block w-1/2 shadow-sm shadow-purple-600 text-center">
             Code
-          </button>
-          <button className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 w-1/2 shadow-md shadow-purple-600">
+          </a>
+          <a href="https://hadifarousheen.github.io/Pokemon-API/" target="_blank" className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 inline-block w-1/2 shadow-sm shadow-purple-600 text-center">
             Live
-          </button>
+          </a>
         </div>
       </div>
       <div className=" w-3/4 m-auto flex my-4  rounded-lg shadow-xl/30 shadow-white">
         <div className="rounded-lg shadow-xl/30 shadow-white">
+         
           <iframe
-            className="rounded-lg h-full"
-            width="560"
-            src="https://www.youtube.com/embed/GvLaAzLkXTU?si=MGEpVCZi96qqyrsk&loop=1&autoplay=1"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+  className="rounded-lg h-full"
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/GvLaAzLkXTU?autoplay=1&loop=1&mute=1&playlist=GvLaAzLkXTU"
+  title="YouTube video player"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
+></iframe>
+
         </div>
         <div className="p-6 shadow-xl/30 shadow-white hover:scale-105 rounded-lg">
           <h1 className="text-3xl text-purple-700 font-bold">
@@ -83,25 +101,28 @@ const Projects = () => {
             Notification API to send timely reminders to students about book
             return deadlines.
           </p>
-          <button className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 w-1/2 shadow-md shadow-purple-600">
+          <a href="https://github.com/hadifarousheen/JITS-Library-Books-Tracker" target="_blank" className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 inline-block w-1/2 shadow-sm shadow-purple-600 text-center">
             Code
-          </button>
-          <button className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 w-1/2 shadow-md shadow-purple-600">
+          </a>
+          <a href="https://hadifarousheen.github.io/JITS-Library-Books-Tracker/" target="_blank" className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 inline-block w-1/2 shadow-sm shadow-purple-600 text-center">
             Live
-          </button>
+          </a>
         </div>
       </div>
       <div className=" w-3/4 m-auto flex my-4  rounded-lg shadow-xl/30 shadow-white">
         <div className="rounded-lg shadow-xl/30 shadow-white">
+         
           <iframe
-            className="rounded-lg h-full"
-            width="560"
-            src="https://www.youtube.com/embed/QRhv7NM9Rew?si=yIWvOsBbXtExBNqU?loop=1&autoplay=1"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+  className="rounded-lg h-full"
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/QRhv7NM9Rew?autoplay=1&loop=1&mute=1&playlist=QRhv7NM9Rew"
+  title="YouTube video player"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
+></iframe>
+
         </div>
         <div className="p-6 shadow-xl/30 shadow-white hover:scale-105 rounded-lg">
           <h1 className="text-3xl text-purple-700 font-bold">
@@ -113,12 +134,12 @@ const Projects = () => {
             responsive UI using CSS and DOM manipulation to handle user inputs
             and game logic in JavaScript.
           </p>
-          <button className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 w-1/2 shadow-md shadow-purple-600">
+          <a href="https://github.com/hadifarousheen/Rock-Paper-Scissor-Game" target="_blank" className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 inline-block w-1/2 shadow-sm shadow-purple-600 text-center">
             Code
-          </button>
-          <button className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 w-1/2 shadow-md shadow-purple-600">
+          </a>
+          <a href="https://hadifarousheen.github.io/Rock-Paper-Scissor-Game/" target="_blank" className="text-xl border border-purple-950 bg-purple-600 rounded-lg p-1 mt-2 inline-block w-1/2 shadow-sm shadow-purple-600 text-center">
             Live
-          </button>
+          </a>
         </div>
       </div>
     </div>
