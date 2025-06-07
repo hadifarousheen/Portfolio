@@ -33,15 +33,15 @@ const Hero = () => {
     <div className="relative w-full h-screen ">
       <div
         id="particles-js"
-        className="absolute top-0 left-0 w-full h-full -z-10"
+        className="absolute  md:top-0 left-0 w-full h-full -z-10"
       />
       <Header />
-      <div className="w-1/2 mx-auto h-full flex flex-col items-center justify-center p-4 mt-[-2%]">
-        <div className="text-4xl text-center p-4 rounded-lg shadow-lg">
+      <div className="w-[90%] md:w-1/2 mx-auto h-full flex flex-col items-center justify-center md:p-4 mt-[-2%]">
+        <div className="text-2xl md:text-4xl text-center p-4 ">
           <h1 className="p-4 font-extrabold">Hello, I'm</h1>
           <h1 className="p-4 font-extrabold text-purple-700">{text}</h1>
           <h1 className="p-4 font-extrabold">I'm a Frontend Developer</h1>
-          <p className="text-xl my-3">
+          <p className="text-sm md:text-xl my-3">
             I’m a frontend developer who builds clean, responsive, and
             user-friendly websites. I specialize in HTML, CSS, and JavaScript,
             and love working with React to bring designs to life. Passionate
@@ -52,7 +52,7 @@ const Hero = () => {
               to="contactSection"
               smooth={true}
               duration={500}
-              className="cursor-pointer  text-xl border border-purple-900 bg-purple-600 text-white mx-2 px-2 py-1 rounded hover:bg-purple-700 transition hover:border hover:border-white"
+              className="cursor-pointer text-lg md:text-xl border border-purple-900 bg-purple-600 text-white mx-2 px-2 py-1 rounded hover:bg-purple-700 transition hover:border hover:border-white"
             >
               Contact Me
             </Link>
@@ -61,7 +61,7 @@ const Hero = () => {
               href={resumePDF}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl border border-purple-900 bg-purple-600 shadow-xl/30 shadow-purple-800 text-white mx-2 px-2 py-1 rounded hover:bg-purple-700 transition hover:border-white"
+              className="text-lg md:text-xl border border-purple-900 bg-purple-600 shadow-xl/30 shadow-purple-800 text-white mx-2 px-2 py-1 rounded hover:bg-purple-700 transition hover:border-white"
             >
               Resume
             </a>

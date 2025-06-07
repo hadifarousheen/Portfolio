@@ -94,15 +94,15 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-screen pb-4 mt-[80%]">
-      <h1 className="text-center text-3xl font-bold p-2 [text-shadow:4px_6px_10px_rgba(145,44,240,1)] text-white my-6">
+    <div className="h-fit md:h-screen pb-6 md:pb-4 ">
+      <h1 className="text-center text-2xl md:text-4xl font-bold p-2 [text-shadow:4px_6px_10px_rgba(145,44,240,1)] text-white my-6">
         CONTACT ME
       </h1>
 
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="border border-white m-auto text-white flex flex-col w-1/3 text-2xl p-4 rounded-lg shadow-xl/30"
+        className="border border-white m-auto text-white flex flex-col md:w-1/3 text-xl md:text-2xl p-4 rounded-lg shadow-xl/30"
       >
         <span className="my-1">
           Name{" "}
