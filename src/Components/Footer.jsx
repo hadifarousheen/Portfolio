@@ -1,13 +1,13 @@
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer sm:footer-horizontal bg-gray-500 text-neutral-content items-center p-1">
-        <aside className=" md:grid-flow-col md:items-center">
-          <p className="text-black ">
+    <div >
+      <footer className="footer flex md:flex-block md:justify-between  bg-gray-500 text-neutral-content items-center  p-1">
+        <aside className="md:grid-flow-col md:items-center  ">
+          <p className="text-black text-xs md:text-xl ">
             Copyright © {new Date().getFullYear()} - Hadifa Rousheen
           </p>
         </aside>
-        <nav className="grid-flow-col md:gap-4 md:place-self-center md:justify-self-end ">
+        <nav className="grid-flow-col md:gap-4  md:justify-self-end  ">
           <a href="https://www.linkedin.com/in/hadifarouhseen/" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"

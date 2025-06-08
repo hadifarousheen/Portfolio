@@ -8,14 +8,14 @@ const Education = () => {
         <li>
           <div className="timeline-start timeline-box">
             <div className="p-2 border border-gray-800 shadow-xl/30 shadow-white">
-              <h1 className="text-2xl md:text-3xl">
+              <h1 className="text-xl md:text-3xl">
                 Bachelero's of Technology (2021-2025)
               </h1>
-              <h2 className="text-xl md:text-2xl">
+              <h2 className="text-md md:text-2xl">
                 Jyothishmathi Institute of Technology and Science
               </h2>
-              <h2 className="text-xl md:text-2xl">Computer Science Engineering</h2>
-              <h3 className="text-lg md:text-xl">CGPA : 8.3</h3>
+              <h2 className="text-md md:text-2xl">Computer Science Engineering</h2>
+              <h3 className="text-md md:text-xl">CGPA : 8.3</h3>
             </div>
           </div>
           <div className="timeline-middle">
@@ -52,9 +52,9 @@ const Education = () => {
           </div>
           <div className="timeline-end timeline-box">
             <div className="p-2 border-gray-800 shadow-xl/30 shadow-white">
-              <h1 className="text-2xl md:text-3xl">XII Standard (2019-2021)</h1>
-              <h2 className="text-xl md:text-2xl">Alphores Junior College</h2>
-              <h3 className="text-lg md:text-xl">Percentage : 93</h3>
+              <h1 className="text-xl md:text-3xl">XII Standard (2019-2021)</h1>
+              <h2 className="text-md md:text-2xl">Alphores Junior College</h2>
+              <h3 className="text-md md:text-xl">Percentage : 93</h3>
             </div>
           </div>
           <hr className="bg-purple-600" />
@@ -63,9 +63,9 @@ const Education = () => {
           <hr className="bg-purple-600" />
           <div className="timeline-start timeline-box">
             <div className="p-2 border-gray-800 shadow-xl/30 shadow-white ">
-              <h1 className="text-2xl md:text-3xl">X Standard (2018-2019)</h1>
-              <h2 className="text-xl md:text-2xl">Paramita Learner's Foundation</h2>
-              <h3 className="text-lg md:text-xl">CGPA : 9.5</h3>
+              <h1 className="text-xl md:text-3xl">X Standard (2018-2019)</h1>
+              <h2 className="text-md md:text-2xl">Paramita Learner's Foundation</h2>
+              <h3 className="text-md md:text-xl">CGPA : 9.5</h3>
             </div>
           </div>
           <div className="timeline-middle">
