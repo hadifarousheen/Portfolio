@@ -100,7 +100,7 @@ const Skills = () => {
   }, []); 
 
   return (
-    <div ref={myDivRef} className="h-fit md:h-screen ">
+    <div ref={myDivRef} className="h-fit  ">
       <h1 className="text-center text-2xl md:text-4xl font-bold p-2 [text-shadow:4px_6px_10px_rgba(145,44,240,1)] text-white">
         SKILLS
       </h1>

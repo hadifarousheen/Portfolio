@@ -1,6 +1,6 @@
 const Education = () => {
   return (
-    <div className=" h-fit md:h-screen ">
+    <div className=" h-fit">
       <h1 className="text-center p-1 md:p-4 text-2xl md:text-4xl font-bold [text-shadow:4px_6px_10px_rgba(145,44,240,1)] text-white">
         EDUCATION
       </h1>

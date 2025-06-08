@@ -94,7 +94,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-fit md:h-screen pb-6 md:pb-4 ">
+    <div className="h-fit  pb-4 md:pb-4 ">
       <h1 className="text-center text-2xl md:text-4xl font-bold p-2 [text-shadow:4px_6px_10px_rgba(145,44,240,1)] text-white my-6">
         CONTACT ME
       </h1>
