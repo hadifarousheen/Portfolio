@@ -12,7 +12,6 @@ const Hero = () => {
 
     const type = () => {
       setText((prev) => {
-        console.log(prev);
         return prev + fullName.charAt(i++);
       });
 

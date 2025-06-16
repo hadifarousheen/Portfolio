@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div >
+    <div className="z-50"  >
       <footer className="footer flex md:flex-block md:justify-between  bg-gray-500 text-neutral-content items-center  p-1">
         <aside className="md:grid-flow-col md:items-center  ">
           <p className="text-black text-xs md:text-xl ">
@@ -8,7 +8,7 @@ const Footer = () => {
           </p>
         </aside>
         <nav className="grid-flow-col md:gap-4  md:justify-self-end  ">
-          <a href="https://www.linkedin.com/in/hadifarouhseen/" target="_blank">
+          <a href="https://www.linkedin.com/in/hadifarouhseen/" target="_blank" >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
