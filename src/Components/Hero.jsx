@@ -3,44 +3,54 @@ import Header from "./Header";
 import { Link } from "react-scroll";
 import resumePDF from "../assets/resume.pdf";
 
-const Hero = () => {
+const Hero = ({isDarkMode,setIsDarkMode}) => {
   const fullName = "HADIFA ROUSHEEN";
   const [text, setText] = useState("");
+useEffect(()=>{
+ let i = 0;
 
-  useEffect(() => {
-    let i = 0;
-
-    const type = () => {
-      setText((prev) => {
-        return prev + fullName.charAt(i++);
-      });
-
-      if (i < fullName.length) {
-        setTimeout(type, 150);
-      }
-    };
-
-    if (window.particlesJS) {
-      window.particlesJS.load("particles-js", "/particles.json", function () {
-        console.log("particles.js config loaded");
-        type();
-      });
+  const type = () => {
+    setText((prev) => {
+      return prev + fullName.charAt(i++);
+    });
+    if (i < fullName.length) {
+      setTimeout(type, 150);
     }
-  }, []);
+  };
+  type()
+},[])
+useEffect(() => {
+ 
+
+  const particlesContainer = document.getElementById("particles-js");
+  if (particlesContainer) {
+    particlesContainer.innerHTML = ""; 
+  }
+
+  const configPath = isDarkMode ? "/particles.json" : "/particleslight.json";
+
+  if (window.particlesJS) {
+    window.particlesJS.load("particles-js", configPath, function () {
+      
+      
+    });
+  } 
+
+}, [isDarkMode]);
 
   return (
-    <div className="relative w-full h-screen ">
+    <div  className="relative w-full h-screen">
       <div
         id="particles-js"
-        className="absolute  md:top-0 left-0 w-full h-full -z-10"
+        className={`absolute  md:top-0 left-0 w-full h-full -z-10 ${!isDarkMode && 'bg-white'} ` }
       />
-      <Header />
+      <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <div className="w-[90%] md:w-1/2 mx-auto h-full flex flex-col items-center justify-center md:p-4 mt-[-2%]">
         <div className="text-2xl md:text-4xl text-center p-4 ">
-          <h1 className="p-4 font-extrabold">Hello, I'm</h1>
+          <h1 className={`p-4 font-extrabold ${!isDarkMode &&'text-black'}`}>Hello, I'm</h1>
           <h1 className="p-4 font-extrabold text-purple-700">{text}</h1>
-          <h1 className="p-4 font-extrabold">I'm a Frontend Developer</h1>
-          <p className="text-sm md:text-xl my-3">
+          <h1 className={`p-4 font-extrabold ${!isDarkMode &&'text-black'}`}>I'm a Frontend Developer</h1>
+          <p className={`text-sm md:text-xl my-3 ${!isDarkMode &&'text-black'}`}>
             I’m a frontend developer who builds clean, responsive, and
             user-friendly websites. I specialize in HTML, CSS, and JavaScript,
             and love working with React to bring designs to life. Passionate
@@ -51,7 +61,8 @@ const Hero = () => {
               to="contactSection"
               smooth={true}
               duration={500}
-              className="cursor-pointer text-lg md:text-xl border border-purple-900 bg-purple-600 text-white mx-2 px-2 py-1 rounded hover:bg-purple-700 transition hover:border hover:border-white"
+              className={`not-[]:cursor-pointer text-lg md:text-xl border border-purple-900 bg-purple-600 text-white mx-2 px-2 py-1 rounded hover:bg-purple-700 transition 
+              ${isDarkMode?'hover:border-white':' hover:border-black'}`}
             >
               Contact Me
             </Link>
@@ -59,7 +70,7 @@ const Hero = () => {
               href={resumePDF}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg md:text-xl border border-purple-900 bg-purple-600 shadow-xl/30 shadow-purple-800 text-white mx-2 px-2 py-1 rounded hover:bg-purple-700 transition hover:border-white"
+              className={`text-lg md:text-xl border border-purple-900 bg-purple-600 shadow-xl/30 shadow-purple-800 text-white mx-2 px-2 py-1 rounded hover:bg-purple-700 transition ${isDarkMode?' hover:border-white':' hover:border-black'}`}
             >
               Resume
             </a>

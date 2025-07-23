@@ -1,7 +1,7 @@
-const Footer = () => {
+const Footer = ({isDarkMode}) => {
   return (
     <div className="z-50"  >
-      <footer className="footer flex md:flex-block justify-between  bg-gray-500 text-neutral-content items-center  p-1">
+      <footer className={`footer flex md:flex-block justify-between   text-neutral-content items-center  p-1  ${isDarkMode?'bg-gray-500':'bg-purple-500'}`}>
         <aside className="md:grid-flow-col md:items-center  ">
           <p className="text-black text-xs md:text-xl ">
             Copyright © {new Date().getFullYear()} - Hadifa Rousheen

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Contact from "./Components/Contact";
 import Education from "./Components/Education";
 import Footer from "./Components/Footer";
@@ -8,34 +9,43 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import { Element } from "react-scroll";
 
 function App() {
+const [isDarkMode, setIsDarkMode] = useState(() => {
+  const stored = localStorage.getItem("isDarkMode");
+  return stored ? JSON.parse(stored) : true; 
+});
+
+useEffect(() => {
+  localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
+}, [isDarkMode]);
+
   return (
-    <div className=" text-white">
+   
       <HashRouter>
         <Routes>
           <Route
             path="/"
             element={
               <>
-                <Hero />
+                <Hero isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
                 <Element name="educationSection">
-                  <Education />
+                  <Education isDarkMode={isDarkMode} />
                 </Element>
                 <Element name="skillsSection">
-                  <Skills />
+                  <Skills isDarkMode={isDarkMode} />
                 </Element>
                 <Element name="projectsSection">
-                  <Projects />
+                  <Projects isDarkMode={isDarkMode} />
                 </Element>
                 <Element name="contactSection">
-                  <Contact />
+                  <Contact isDarkMode={isDarkMode} />
                 </Element>
-                <Footer />
+                <Footer isDarkMode={isDarkMode} />
               </>
             }
           />
         </Routes>
       </HashRouter>
-    </div>
+  
   );
 }
 

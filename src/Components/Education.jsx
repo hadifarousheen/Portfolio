@@ -1,23 +1,19 @@
-const Education = () => {
+const Education = ({ isDarkMode }) => {
+  const bgClass = isDarkMode ? "bg-transparent" : "bg-white";
+  const textClass = isDarkMode ? "text-white" : "text-black";
+  const shadowClass = isDarkMode ? "shadow-white" : "shadow-black";
+  const borderClass = isDarkMode ? "border-gray-800" : "border-black";
+
   return (
-    <div className=" h-fit">
-      <h1 className="text-center p-1 md:p-4 text-2xl md:text-4xl font-bold [text-shadow:4px_6px_10px_rgba(145,44,240,1)] text-white">
+    <div className={`h-fit ${bgClass}`}>
+      <h1
+        className={`text-center p-1 md:p-4 text-2xl md:text-4xl font-bold 
+        [text-shadow:4px_6px_10px_rgba(145,44,240,1)] ${textClass}`}
+      >
         EDUCATION
       </h1>
-      <ul className="timeline timeline-vertical ">
+      <ul className="timeline timeline-vertical">
         <li>
-          <div className="timeline-start timeline-box">
-            <div className="p-2 border border-gray-800 shadow-xl/30 shadow-white">
-              <h1 className="text-xl md:text-3xl">
-                Bachelero's of Technology (2021-2025)
-              </h1>
-              <h2 className="text-md md:text-2xl">
-                Jyothishmathi Institute of Technology and Science
-              </h2>
-              <h2 className="text-md md:text-2xl">Computer Science Engineering</h2>
-              <h3 className="text-md md:text-xl">CGPA : 8.3</h3>
-            </div>
-          </div>
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -31,6 +27,18 @@ const Education = () => {
                 clipRule="evenodd"
               />
             </svg>
+          </div>
+          <div className="timeline-start timeline-box">
+            <div className={`p-2 ${borderClass} border ${shadowClass} shadow-xl/30 ${bgClass} ${textClass} ${!isDarkMode && 'rounded-lg'}`}>
+              <h1 className="text-xl md:text-3xl">
+                Bachelor's of Technology (2021–2025)
+              </h1>
+              <h2 className="text-md md:text-2xl">
+                Jyothishmathi Institute of Technology and Science
+              </h2>
+              <h2 className="text-md md:text-2xl">Computer Science Engineering</h2>
+              <h3 className="text-md md:text-xl">CGPA : 8.3</h3>
+            </div>
           </div>
           <hr className="bg-purple-600" />
         </li>
@@ -51,8 +59,8 @@ const Education = () => {
             </svg>
           </div>
           <div className="timeline-end timeline-box">
-            <div className="p-2 border-gray-800 shadow-xl/30 shadow-white">
-              <h1 className="text-xl md:text-3xl">XII Standard (2019-2021)</h1>
+            <div className={`p-2 ${borderClass} border ${shadowClass} shadow-xl/30 ${bgClass} ${textClass}  ${!isDarkMode && 'rounded-lg'}`}>
+              <h1 className="text-xl md:text-3xl">XII Standard (2019–2021)</h1>
               <h2 className="text-md md:text-2xl">Alphores Junior College</h2>
               <h3 className="text-md md:text-xl">Percentage : 93</h3>
             </div>
@@ -61,13 +69,6 @@ const Education = () => {
         </li>
         <li>
           <hr className="bg-purple-600" />
-          <div className="timeline-start timeline-box">
-            <div className="p-2 border-gray-800 shadow-xl/30 shadow-white ">
-              <h1 className="text-xl md:text-3xl">X Standard (2018-2019)</h1>
-              <h2 className="text-md md:text-2xl">Paramita Learner's Foundation</h2>
-              <h3 className="text-md md:text-xl">CGPA : 9.5</h3>
-            </div>
-          </div>
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -82,8 +83,14 @@ const Education = () => {
               />
             </svg>
           </div>
+          <div className="timeline-start timeline-box">
+            <div className={`p-2 ${borderClass} border ${shadowClass} shadow-xl/30 ${bgClass} ${textClass}  ${!isDarkMode && 'rounded-lg'}`}>
+              <h1 className="text-xl md:text-3xl">X Standard (2018–2019)</h1>
+              <h2 className="text-md md:text-2xl">Paramita Learner's Foundation</h2>
+              <h3 className="text-md md:text-xl">CGPA : 9.5</h3>
+            </div>
+          </div>
         </li>
-        <li></li>
       </ul>
     </div>
   );

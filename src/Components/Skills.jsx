@@ -4,21 +4,21 @@ import {
   frameworklinks,
 } from "../constants/imageurls";
 
-const Skills = () => {
+const Skills = ({isDarkMode}) => {
   return (
-    <div className="h-fit  ">
-      <h1 className="text-center text-2xl md:text-4xl font-bold p-2 [text-shadow:4px_6px_10px_rgba(145,44,240,1)] text-white">
+    <div className={`h-fit mb-0 ${!isDarkMode && 'bg-white text-black'} `}>
+      <h1 className={`text-center text-2xl md:text-4xl font-bold p-2 [text-shadow:4px_6px_10px_rgba(145,44,240,1)] ${isDarkMode?'text-white':'text-purple-900'}`}>
         SKILLS
       </h1>
-      <div className="  w-2/3   m-auto p-4">
+      <div className="w-2/3   m-auto p-4">
         <h2 className="text-lg md:text-2xl font-bold text-center my-auto mr-auto [text-shadow:4px_6px_10px_rgba(145,44,240,1)] block pb-5">
           Technologies
         </h2>
         <div className="flex flex-wrap gap-5 justify-center">
-          {imagelinks.map((card) => (
+          {imagelinks.map((card,index) => (
             <img
-              className="h-20 w-20 md:h-40 md:w-40 rounded-lg hover:rotate-45"
-              src={card}
+              className="h-20 w-20 md:h-40 md:w-40 rounded-lg hover:rotate-45 "
+              src={card} key={index}
             />
           ))}
         </div>
@@ -28,10 +28,10 @@ const Skills = () => {
           Frameworks
         </h2>
         <div className="flex flex-wrap gap-5 justify-center">
-          {frameworklinks.map((card) => (
+          {frameworklinks.map((card,index) => (
             <img
               className="h-20 w-20 md:h-40 md:w-40 rounded-lg hover:rotate-45"
-              src={card}
+              src={card} key={index}
             />
           ))}
         </div>
@@ -41,10 +41,10 @@ const Skills = () => {
           Languages
         </h2>
         <div className="flex flex-wrap gap-5 justify-center">
-          {languageslinks.map((card) => (
+          {languageslinks.map((card,index) => (
             <img
               className="h-20 w-20 md:h-40 md:w-40 rounded-lg hover:rotate-45"
-              src={card}
+              src={card} key={index}
             />
           ))}
         </div>
