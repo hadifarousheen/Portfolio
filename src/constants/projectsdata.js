@@ -1,7 +1,7 @@
 export const projectsdata=[
         {
           title: "CookGPT",
-          video: "MPRUQB5KEd4",
+          website: "https://hadifarousheen.github.io/CookGPT/",
           description:
             "  Developed an AI-powered recipe generator that suggests dishes based on keywords like “spicy Chinese” or “Indian chicken”. Shows results in both video and text formats. Uses Firebase for authentication and Groq API for natural language search.",
           code: "https://github.com/hadifarousheen/CookGPT",
@@ -9,7 +9,7 @@ export const projectsdata=[
         },
         {
           title: "Pokemon API",
-          video: "x2XirnlZF4o",
+          website: "https://hadifarousheen.github.io/Pokemon-API/",
           description:
             "Built a React app that fetches data from the Pokémon API and displays it interactively. Includes search, sort, filter, random Pokémon generator, favorites, and comparison.",
           code: "https://github.com/hadifarousheen/Pokemon-API",
@@ -17,7 +17,7 @@ export const projectsdata=[
         },
         {
           title: "JITS Library Books Tracker",
-          video: "GvLaAzLkXTU",
+          website: "https://hadifarousheen.github.io/JITS-Library-Books-Tracker/",
           description:
             "Web app to track borrowed library books and avoid late fees. Uses Notification API for deadline reminders.",
           code: "https://github.com/hadifarousheen/JITS-Library-Books-Tracker",
@@ -25,7 +25,7 @@ export const projectsdata=[
         },
         {
           title: "Rock-Paper-Scissor-Game",
-          video: "QRhv7NM9Rew",
+          website: "https://hadifarousheen.github.io/Rock-Paper-Scissor-Game/",
           description:
             "Interactive browser-based Rock-Paper-Scissors game with real-time results and responsive UI using HTML, CSS, and JS.",
           code: "https://github.com/hadifarousheen/Rock-Paper-Scissor-Game",

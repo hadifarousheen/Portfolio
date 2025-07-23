@@ -11,17 +11,16 @@ const Projects = () => {
           key={i}
           className="w-full md:w-3/4 md:m-auto flex flex-col md:flex-row gap-4 my-4 rounded-lg shadow-xl/30 shadow-white md:my-8"
         >
-          <div className="rounded-lg shadow-xl/30 shadow-white  w-full md:w-1/2">
-            <div className="aspect-w-16 aspect-h-9 md:aspect-video">
+          <div className="rounded-lg shadow-xl/30 shadow-white  w-full  ">
+           
               <iframe
-                className="rounded-lg w-full h-full"
-                src={`https://www.youtube.com/embed/${proj.video}?autoplay=1&loop=1&mute=1&playlist=${proj.video}`}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </div>
+  className="rounded-lg w-full h-full"
+  src={proj.website}
+  loading="lazy"
+  allowFullScreen
+  
+/>
+          
           </div>
           <div className="w-full md:w-1/2 p-2 md:p-6 shadow-xl/30 shadow-white hover:scale-105 rounded-lg">
             <h1 className="text-lg md:text-3xl text-purple-700 font-bold">{proj.title}</h1>
