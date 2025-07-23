@@ -10,7 +10,6 @@ const Skills = () => {
       <h1 className="text-center text-2xl md:text-4xl font-bold p-2 [text-shadow:4px_6px_10px_rgba(145,44,240,1)] text-white">
         SKILLS
       </h1>
-
       <div className="  w-2/3   m-auto p-4">
         <h2 className="text-lg md:text-2xl font-bold text-center my-auto mr-auto [text-shadow:4px_6px_10px_rgba(145,44,240,1)] block pb-5">
           Technologies
