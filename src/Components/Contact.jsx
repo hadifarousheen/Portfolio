@@ -1,4 +1,4 @@
-import  { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -6,13 +6,12 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
-        "service_rluw16z",
-        "template_ut4dp48",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        "vWR4jYoTlkSYl5LxM"
+        import.meta.env.VITE_PUBLIC_KEY
       )
       .then(
         () => {
@@ -31,14 +30,13 @@ const Contact = () => {
       <h1 className="text-center text-2xl md:text-4xl font-bold p-2 [text-shadow:4px_6px_10px_rgba(145,44,240,1)] text-white my-6">
         CONTACT ME
       </h1>
-
       <form
         ref={form}
         onSubmit={sendEmail}
         className="border border-white m-auto text-white flex flex-col md:w-1/3 text-xl md:text-2xl p-4 rounded-lg shadow-xl/30"
       >
         <span className="my-1">
-          Name{" "}
+          Name
           <input
             name="user_name"
             className="border border-white w-full my-1 rounded-lg"
@@ -46,9 +44,8 @@ const Contact = () => {
             required
           />
         </span>
-
         <span className="my-1">
-          Email{" "}
+          Email
           <input
             name="user_email"
             className="border border-white w-full my-1 rounded-lg"
@@ -56,9 +53,8 @@ const Contact = () => {
             required
           />
         </span>
-
         <span className="my-1">
-          Message{" "}
+          Message
           <textarea
             name="message"
             rows={6}
@@ -66,7 +62,6 @@ const Contact = () => {
             required
           ></textarea>
         </span>
-
         <button
           type="submit"
           className="w-full rounded border border-purple-900 bg-purple-600 text-white hover:bg-purple-700"
@@ -79,4 +74,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

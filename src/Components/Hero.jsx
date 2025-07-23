@@ -55,7 +55,6 @@ const Hero = () => {
             >
               Contact Me
             </Link>
-
             <a
               href={resumePDF}
               target="_blank"

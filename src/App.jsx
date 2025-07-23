@@ -17,11 +17,9 @@ function App() {
             element={
               <>
                 <Hero />
-
                 <Element name="educationSection">
                   <Education />
                 </Element>
-
                 <Element name="skillsSection">
                   <Skills />
                 </Element>
@@ -31,7 +29,6 @@ function App() {
                 <Element name="contactSection">
                   <Contact />
                 </Element>
-
                 <Footer />
               </>
             }
