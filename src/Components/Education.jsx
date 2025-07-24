@@ -8,7 +8,7 @@ const Education = ({ isDarkMode }) => {
     <div className={`h-fit ${bgClass}`}>
       <h1
         className={`text-center p-1 md:p-4 text-2xl md:text-4xl font-bold 
-        [text-shadow:4px_6px_10px_rgba(145,44,240,1)] ${textClass}`}
+        [text-shadow:4px_6px_10px_rgba(145,44,240,1)] ${isDarkMode?'text-white':'text-purple-900'}`}
       >
         EDUCATION
       </h1>
