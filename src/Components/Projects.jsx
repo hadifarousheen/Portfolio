@@ -8,9 +8,9 @@ const Projects = ({isDarkMode}) => {
       {projectsdata.map((proj, i) => (
         <div
           key={i}
-          className={`w-full md:w-3/4 md:m-auto flex flex-col md:flex-row gap-4 mt-4 rounded-lg shadow-xl/30 ${isDarkMode?'shadow-white':'shadow-black'} md:mt-8`}
+          className={`w-full md:w-3/4 md:m-auto flex flex-col md:flex-row gap-4 mt-4 rounded-lg shadow-xl/30 ${isDarkMode?'shadow-white':'shadow-black '} md:mt-8`}
         >
-          <div className={`w-full h-[400px] overflow-hidden rounded-lg shadow-xl/30 ${isDarkMode?'shadow-white':'shadow-black'} `}>
+          <div className={`w-full h-[400px] overflow-hidden rounded-lg shadow-xl/30 ${isDarkMode?'shadow-white':'shadow-black border-2 border-black'} `}>
             <div className="scale-[0.75] origin-top-left w-[133.33%] h-[133.33%]">
               <iframe
                 src={proj.website}
@@ -18,7 +18,7 @@ const Projects = ({isDarkMode}) => {
               ></iframe>
             </div>
           </div>
-          <div className={`w-full md:w-1/2 p-2 md:p-6 shadow-xl/30 ${isDarkMode?'shadow-white':'shadow-black'} hover:scale-105 rounded-lg`}>
+          <div className={`w-full md:w-1/2 p-2 md:p-6 shadow-xl/30 ${isDarkMode?'shadow-white':'shadow-black border-2 border-black'} hover:scale-105 rounded-lg`}>
             <h1 className="text-lg md:text-3xl text-purple-700 font-bold">
               {proj.title}
             </h1>

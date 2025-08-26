@@ -1,6 +1,6 @@
 const Footer = ({isDarkMode}) => {
   return (
-    <div className="z-50"  >
+    <div className="z-50 font-bold"  >
       <footer className={`footer flex md:flex-block justify-between   text-neutral-content items-center  p-1  ${isDarkMode?'bg-gray-500':'bg-purple-500'}`}>
         <aside className="md:grid-flow-col md:items-center  ">
           <p className="text-black text-xs md:text-xl ">

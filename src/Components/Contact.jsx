@@ -33,7 +33,7 @@ const Contact = ({isDarkMode}) => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className={`border  m-auto ${isDarkMode?'text-white border-white':'text-black border-black '}  flex flex-col md:w-1/3 text-xl md:text-2xl p-4 rounded-lg shadow-xl/30`}
+        className={`border  m-auto ${isDarkMode?'text-white border-white':'text-black border-black border-2 '}  flex flex-col md:w-1/3 text-xl md:text-2xl p-4 rounded-lg shadow-xl/30`}
       >
         <span className="my-1 font-bold">
           Name
