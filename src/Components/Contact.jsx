@@ -3,7 +3,6 @@ import emailjs from "@emailjs/browser";
 
 const Contact = ({isDarkMode}) => {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -21,7 +20,6 @@ const Contact = ({isDarkMode}) => {
           alert("Failed to send message, please try again.");
         }
       );
-
     e.target.reset();
   };
 

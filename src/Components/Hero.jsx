@@ -8,7 +8,6 @@ const Hero = ({isDarkMode,setIsDarkMode}) => {
   const [text, setText] = useState("");
 useEffect(()=>{
  let i = 0;
-
   const type = () => {
     setText((prev) => {
       return prev + fullName.charAt(i++);
@@ -20,22 +19,16 @@ useEffect(()=>{
   type()
 },[])
 useEffect(() => {
- 
 
   const particlesContainer = document.getElementById("particles-js");
   if (particlesContainer) {
     particlesContainer.innerHTML = ""; 
   }
-
   const configPath = isDarkMode ? "/particles.json" : "/particleslight.json";
-
   if (window.particlesJS) {
     window.particlesJS.load("particles-js", configPath, function () {
-      
-      
     });
   } 
-
 }, [isDarkMode]);
 
   return (

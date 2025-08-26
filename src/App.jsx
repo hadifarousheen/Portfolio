@@ -19,7 +19,6 @@ useEffect(() => {
 }, [isDarkMode]);
 
   return (
-   
       <HashRouter>
         <Routes>
           <Route
@@ -45,7 +44,6 @@ useEffect(() => {
           />
         </Routes>
       </HashRouter>
-  
   );
 }
 

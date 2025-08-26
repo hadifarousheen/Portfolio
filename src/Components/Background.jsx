@@ -3,7 +3,7 @@ import { useEffect } from "react";
 export default function ParticlesBackground() {
   useEffect(() => {
     window.particlesJS.load("particles-js", "/particles.json", function () {
-      console.log("particles.js loaded");
+     
     });
   }, []);
 
