@@ -10,13 +10,15 @@ const Projects = ({isDarkMode}) => {
           key={i}
           className={`w-full md:w-3/4 md:m-auto flex flex-col md:flex-row gap-4 mt-4 rounded-lg shadow-xl/30 ${isDarkMode?'shadow-white':'shadow-black '} md:mt-8`}
         >
-          <div className={`w-full h-[400px] overflow-hidden rounded-lg shadow-xl/30 ${isDarkMode?'shadow-white':'shadow-black border-2 border-black'} `}>
-            <div className="scale-[0.75] origin-top-left w-[133.33%] h-[133.33%]">
+          <div className={`w-full h-[300px] md:h-[400px] overflow-hidden rounded-lg shadow-xl/30 ${isDarkMode?'shadow-white':'shadow-black border-2 border-black'} `}>
+            <div className="scale-[0.6]  w-[165%] h-[150%] md:scale-[0.75] origin-top-left md:w-[133.33%] md:h-[133.33%]">
               <iframe
                 src={proj.website}
-                className="rounded-lg w-full h-full border-none"
+                className=" rounded-lg  w-full h-full border-none"
               ></iframe>
             </div>
+           
+
           </div>
           <div className={`w-full md:w-1/2 p-2 md:p-6 shadow-xl/30 ${isDarkMode?'shadow-white':'shadow-black border-2 border-black'} hover:scale-105 rounded-lg`}>
             <h1 className="text-lg md:text-3xl text-purple-700 font-bold">
