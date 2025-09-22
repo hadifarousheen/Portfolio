@@ -9,7 +9,7 @@ export const projectsdata=[
         },
         {
           title: "PokeSphere",
-          website: "https://hadifarousheen.github.io/Pokemon-API/",
+          website: "https://hadifarousheen.github.io/PokeSphere/",
           description:
             "Built a React app that fetches data from the Pokémon API and displays it interactively. Includes search, sort, filter, random Pokémon generator, favorites, and comparison.",
           code: "https://github.com/hadifarousheen/Pokemon-API",
