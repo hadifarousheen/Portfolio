@@ -3,7 +3,7 @@ export const projectsdata=[
           title: "CookGPT",
           website: "https://hadifarousheen.github.io/CookGPT/",
           description:
-            "  Developed an AI-powered recipe generator that suggests dishes based on keywords like “spicy Chinese” or “Indian chicken”. Shows results in both video and text formats. Uses Firebase for authentication and Groq API for natural language search.",
+            "Developed an AI-powered recipe generator that suggests dishes based on keywords like “spicy Chinese” or “Indian chicken”. Shows results in both video and text formats. Uses Firebase for authentication and Groq API for natural language search.",
           code: "https://github.com/hadifarousheen/CookGPT",
           live: "https://hadifarousheen.github.io/CookGPT/",
         },
@@ -11,9 +11,9 @@ export const projectsdata=[
           title: "PokeSphere",
           website: "https://hadifarousheen.github.io/PokeSphere/",
           description:
-            "Built a React app that fetches data from the Pokémon API and displays it interactively. Includes search, sort, filter, random Pokémon generator, favorites, and comparison.",
-          code: "https://github.com/hadifarousheen/Pokemon-API",
-          live: "https://hadifarousheen.github.io/Pokemon-API/",
+            "Developed a React-based application to deliver an interactive Pokémon exploration experience, featuring pagination, search, sorting, type-based filtering, shimmer UI, random Pokémon generator, favorites and comparision management.",
+          code: "https://github.com/hadifarousheen/PokeSphere",
+          live: "https://hadifarousheen.github.io/PokeSphere/",
         },
         {
           title: "JITS Library Books Tracker",
