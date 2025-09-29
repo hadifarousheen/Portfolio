@@ -1,8 +1,8 @@
 import { certificatelinks } from "../constants/certificateurls";
 const Certificates = ({isDarkMode}) => {
   return (
-    <div className={`h-fit mb-0 ${!isDarkMode && 'bg-white text-black'} `}>
-      <h1 className={`text-center text-2xl md:text-4xl font-bold my-6 p-2 [text-shadow:4px_6px_10px_rgba(145,44,240,1)] ${isDarkMode?'text-white':'text-purple-900'}`}>
+    <div className={`h-fit mb-0 mt-6 ${!isDarkMode && 'bg-white text-black'} `}>
+      <h1 className={`text-center text-2xl md:text-4xl font-bold  p-2 [text-shadow:4px_6px_10px_rgba(145,44,240,1)] ${isDarkMode?'text-white':'text-purple-900'}`}>
         CERTIFICATES
       </h1>
      
