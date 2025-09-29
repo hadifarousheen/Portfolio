@@ -42,12 +42,9 @@ useEffect(() => {
         <div className="text-2xl md:text-4xl text-center p-4 ">
           <h1 className={`p-4 font-extrabold ${!isDarkMode &&'text-black'}`}>Hello, I'm</h1>
           <h1 className="p-4 font-extrabold text-purple-700">{text}</h1>
-          <h1 className={`p-4 font-extrabold ${!isDarkMode &&'text-black'}`}>I'm a Frontend Developer</h1>
+          <h1 className={`p-4 font-extrabold ${!isDarkMode &&'text-black'}`}>A FullStack Developer</h1>
           <p className={`text-sm md:text-xl my-3 ${!isDarkMode &&'text-black'}`}>
-            I’m a frontend developer who builds clean, responsive, and
-            user-friendly websites. I specialize in HTML, CSS, and JavaScript,
-            and love working with React to bring designs to life. Passionate
-            about creating smooth experiences and learning new tech every day.{" "}
+          A passionate Full-Stack Developer specializing in building dynamic and scalable web applications. I enjoy transforming ideas into functional products using MERN stack (MongoDB, Express.js, React, Node.js) and modern tools like Redux, Tailwind CSS, and REST APIs{" "}
           </p>
           <div className="flex justify-center mt-4">
             <Link

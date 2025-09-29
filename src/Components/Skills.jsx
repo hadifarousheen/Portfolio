@@ -2,6 +2,7 @@ import {
   imagelinks,
   languageslinks,
   frameworklinks,
+  dataBaselinks
 } from "../constants/imageurls";
 
 const Skills = ({isDarkMode}) => {
@@ -42,6 +43,19 @@ const Skills = ({isDarkMode}) => {
         </h2>
         <div className="flex flex-wrap gap-5 justify-center">
           {languageslinks.map((card,index) => (
+            <img
+              className="h-20 w-20 md:h-40 md:w-40 rounded-lg hover:rotate-45"
+              src={card} key={index}
+            />
+          ))}
+        </div>
+      </div>
+       <div className=" w-2/3  m-auto items-center justify-center p-4  ">
+        <h2 className="text-lg md:text-2xl font-bold my-auto text-center mr-auto [text-shadow:4px_6px_10px_rgba(145,44,240,1)] pb-5">
+         Database
+        </h2>
+        <div className="flex flex-wrap gap-5 justify-center">
+          {dataBaselinks.map((card,index) => (
             <img
               className="h-20 w-20 md:h-40 md:w-40 rounded-lg hover:rotate-45"
               src={card} key={index}

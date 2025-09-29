@@ -1,4 +1,12 @@
 export const projectsdata=[
+  {
+          title: "CampusConnect",
+          website: "https://campusconnect.digital/",
+          description:
+            "A MERN-stack social platform that enables students across and within colleges to connect, collaborate, and communicate. Implemented real-time chat, feed pagination, Razorpay payment integration, and friend request management.",
+          code: "https://github.com/hadifarousheen/CampusConnect",
+          live: "https://campusconnect.digital/",
+        },
         {
           title: "CookGPT",
           website: "https://hadifarousheen.github.io/CookGPT/",
@@ -22,13 +30,6 @@ export const projectsdata=[
             "Web app to track borrowed library books and avoid late fees. Uses Notification API for deadline reminders.",
           code: "https://github.com/hadifarousheen/JITS-Library-Books-Tracker",
           live: "https://hadifarousheen.github.io/JITS-Library-Books-Tracker/",
-        },
-        {
-          title: "Rock-Paper-Scissor-Game",
-          website: "https://hadifarousheen.github.io/Rock-Paper-Scissor-Game/",
-          description:
-            "Interactive browser-based Rock-Paper-Scissors game with real-time results and responsive UI using HTML, CSS, and JS.",
-          code: "https://github.com/hadifarousheen/Rock-Paper-Scissor-Game",
-          live: "https://hadifarousheen.github.io/Rock-Paper-Scissor-Game/",
         }
+        
       ];

@@ -7,6 +7,7 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { Element } from "react-scroll";
+import Certificates from "./Components/Cerfificates";
 
 function App() {
 const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -34,6 +35,9 @@ useEffect(() => {
                 </Element>
                 <Element name="projectsSection">
                   <Projects isDarkMode={isDarkMode} />
+                </Element>
+                  <Element name="certificateSection">
+                  <Certificates isDarkMode={isDarkMode} />
                 </Element>
                 <Element name="contactSection">
                   <Contact isDarkMode={isDarkMode} />
